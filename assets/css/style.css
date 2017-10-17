@@ -1,0 +1,466 @@
+/*
+    CSS styling for Stoic Purpose
+*/
+
+/*
+   Just a small tweak as I did not like the
+   1285px default setting that Materialize has
+*/
+.container {
+
+  max-width: 95%;
+
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/*
+  This is how I get the bleed-to-edge content effect
+*/
+.container-fluid{
+  width: 100%;
+  max-width: 100%;
+}
+.container-fluid > row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+nav{
+
+  background: -webkit-linear-gradient(left, #03a9f4, #1976d2 5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -moz-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -ms-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -o-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+}
+
+
+
+.dropdown-content {
+  background-color: #e8eaf6;
+}
+.dropdown-content li {
+  color: #000000;
+}
+
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: #c5cae9;
+}
+
+.dropdown-content li.active.selected {
+  background-color: #9fa8da;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #1a237e;
+}
+
+.side-nav{
+  background-color: #3d5afe;
+}
+
+.side-nav .collapsible-body > ul:not(.collapsible) > li.active,
+.side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
+  background-color: rgba(140, 158, 255, 0.06);
+}
+
+.side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
+.side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active a {
+  color: #000000;
+}
+.side-nav li > a:hover {
+  background-color: rgba(140, 158, 255, 0.06);
+}
+.side-nav li.active {
+  background-color: rgba(140, 158, 255, 0.06);
+}
+.side-nav .collapsible-body,
+.side-nav.fixed .collapsible-body {
+  border: 0;
+  background-color: #1a237e;
+}
+.side-nav .collapsible-header:hover,
+.side-nav.fixed .collapsible-header:hover {
+  background-color: rgba(140, 158, 255, 0.06);
+}
+
+.side-nav li > a {
+  color: #ffffff;
+  background-color: #3d5afe;
+}
+
+.pagination li a {
+  color: #3d5afe;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination li.active a {
+  color: #1a237e;
+}
+.pagination li.active {
+  background-color: #03a9f4;
+}
+
+.divider{
+  background-color: #03a9f4;
+}
+
+.quote{
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+.author-info{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+
+
+  border-width: 10px 0 10px 10px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #1976d2, #03a9f4) 1 100%;
+}
+
+cite{
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-image: linear-gradient(to top, #1976d2, #03a9f4) 1 100%;
+  padding-right:  1.5rem;
+}
+
+.site-menu{
+  margin-left: 35%;
+  line-height: 48px;
+}
+
+.slider .slides li .caption {
+
+   top: 40%;
+
+}
+.caption-title{
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.caption-body{
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+
+/* you will have to darken or choose an accent of your color scheme */
+.slider .indicators .indicator-item {
+  background-color:  #0d47a1;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #80d8ff;
+}
+/*
+  Because of the darkness of the buttons, one
+  probably does not have to extend and code one's
+  own waves class and can just use the default waves-light
+*/
+.btn:focus, .btn-large:focus,
+.btn-floating:focus {
+  background-color: #1a237e;
+}
+
+.btn, .btn-large {
+
+  color: #ffffff;
+  background-color: #3f51b5;
+
+}
+
+.btn:hover, .btn-large:hover {
+  color: #ffffff;
+  background-color: #304ffe;
+}
+
+/*
+  For container-fluid to work we need to wrap both the main and the footer
+  and offset that for the fullscreen slider
+*/
+.main-content-wrapper{
+  display: block;
+  position: relative;
+  top: 753px;
+
+}
+@media only screen and (max-width: 600px) {
+  .main-content-wrapper{
+    top: 253px;
+  }
+
+}
+@media only screen and (max-width: 993px) {
+  .main-content-wrapper{
+    top: 253px;
+  }
+
+}
+@media only screen and (max-width: 1280px) {
+  .main-content-wrapper{
+    top: 453px;
+  }
+
+}
+
+@media only screen and (min-width: 1680px){
+  .main-content-wrapper{
+    top: 953px;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .main-content-wrapper{
+    top: 1553px;
+  }
+}
+
+
+img.D-shape-left{
+  float: left;
+  height: 180px;
+  width: 180px;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+
+.card-header{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.section-title{
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+.page-title{
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+.card-title{
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  background-color: rgba(33, 150, 243, 0.5);
+}
+
+/*
+  MS work-around for placeholders
+*/
+.site-form-wrapper{
+  text-align: left;
+  line-height: normal;
+}
+.site-form-wrapper i.prefix{
+  color: #1a237e;
+}
+.site-form-wrapper ::placeholder{
+  color: #1a237e;
+}
+.site-form-wrapper ::-webkit-input-placeholder{
+  color: #1a237e;
+}
+.site-form-wrapper ::-moz-placeholder  {
+  color: #1a237e;
+}
+.site-form-wrapper :-ms-input-placeholder {
+  color: #1a237e;
+}
+.site-form-wrapper input:not(.browser-default):focus:not([readonly]), textarea:not(.browser-default):focus:not([readonly]){
+  border-bottom: 1px solid #303f9f;
+  -webkit-box-shadow: 0 1px 0 0 #303f9f;
+          box-shadow: 0 1px 0 0 #303f9f;
+}
+.site-form-wrapper .input-field label{
+  color: #1a237e;
+}
+.site-form-wrapper i.prefix.active{
+  color: #303f9f;
+}
+.site-form-wrapper  input:not(.browser-default):focus:not([readonly]) + label, textarea:not(.browser-default):focus:not([readonly]) + label{
+  color: #303f9f;
+}
+.site-form-wrapper input[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+  background-color: #303f9f;
+}
+.site-form-wrapper input[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
+  border: 2px solid #1a237e;
+}
+
+.site-form-wrapper .dropdown-content{
+  background-color: #e8eaf6;
+}
+
+.site-form-wrapper .dropdown-content li:hover, .site-header .dropdown-content li.active, .site-header .dropdown-content li.selected {
+  background-color: #c5cae9;
+  color:  #1a237e;
+}
+.site-form-wrapper .dropdown-content li:hover a, .site-header .dropdown-content li.active a, .site-header .dropdown-content li.selected a{
+  background-color: #c5cae9;
+  color:  #1a237e;
+}
+.site-form-wrapper .dropdown-content li.active.selected {
+  background-color: #c5cae9;
+  color:  #1a237e;
+}
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+
+  border-bottom: 1px solid #303f9f;
+
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1a237e;
+  -webkit-box-shadow: 0 1px 0 0 #1a237e;
+          box-shadow: 0 1px 0 0 #1a237e;
+}
+
+
+
+.tabs .tab a {
+  color: rgba(26, 35, 126, 0.7);
+
+}
+
+.tabs.tabs-transparent .tab a,
+.tabs.tabs-transparent .tab.disabled a,
+.tabs.tabs-transparent .tab.disabled a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tabs.tabs-transparent .tab a:hover,
+.tabs.tabs-transparent .tab a.active {
+  color: #fff;
+}
+
+.tabs.tabs-transparent .indicator {
+  background-color: #fff;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #1a237e;
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+  color: rgba(26, 35, 126, 0.7);
+  cursor: default;
+}
+
+.tabs .indicator {
+
+  background-color: #8c9eff;
+
+}
+
+/*
+   Footer specific CSS settings
+*/
+footer.page-footer{
+  background: -webkit-linear-gradient(left, #03a9f4, #1976d2 5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -moz-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -ms-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -o-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+}
+footer.page-footer li a:hover{
+  color: #8c9eff;
+}
+footer.page-footer li a:vistied{
+  color: #c5cae9;
+}
+footer.page-footer .footer-copyright{
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/*
+   Specific CSS styling per page is below
+*/
+
+
+/* Index CSS Styling */
+.roboto-slab-font{
+  font-family: 'Roboto Slab', serif;
+}
+.roboto-mono-font{
+  font-family: 'Roboto Mono', monospace;
+}
+.roboto-condensed-font{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* blog styling */
+
+.shares{
+  font-family: "Roboto Condensed", sans-serif;
+}
+.blog-sidebar-section-title{
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+.blogposttitle{
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.blogpostinfo{
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+/* tos styling */
+.tos-body{
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+/* privacy styling */
+.privacy-body{
+  font-family: "Roboto Condensed", sans-serif;
+}
